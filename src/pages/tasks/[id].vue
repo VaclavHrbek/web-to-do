@@ -9,7 +9,6 @@ const { data: task } = await useFetch<Task>(`/api/tasks/${route.params.id}`);
 </script>
 
 <template>
-  <UContainer>
     <UCard>
       <template #header>
         <h1 class="text-2xl font-semibold" v-if="task">{{ task.title }}</h1>
@@ -18,5 +17,4 @@ const { data: task } = await useFetch<Task>(`/api/tasks/${route.params.id}`);
       <p v-if="task">{{ task.description }}</p>
       <p v-else>Loading...</p>
     </UCard>
-  </UContainer>
 </template>
