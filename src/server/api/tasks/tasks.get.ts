@@ -7,7 +7,7 @@ export default defineEventHandler((event) => {
       tasks.push({
         id : i,
         title: faker.lorem.sentence(),
-        descripiton: faker.lorem.paragraph()
+        description: faker.lorem.paragraph()
       })
     }
     return tasks
