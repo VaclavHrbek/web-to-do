@@ -4,7 +4,7 @@
     </div>
 </template> -->
 <script setup lang="ts">
-const { data } = await useFetch('/api/todos')
+const { data } = await useFetch('/api/tasks/tasks')
 </script>
 
 <template>
