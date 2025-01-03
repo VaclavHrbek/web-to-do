@@ -25,6 +25,7 @@ const { data: tasks, error } = await useFetch<Task[]>('/api/tasks/tasks')
                     <div class="m-2 p-2">
                         <p>{{ task.title }}</p>
                     </div>
+                    <UButton class="ml-auto my-3 p-2" :to="`/tasks/${task.id}`" color="primary" variant="link" >Detail</UButton>
                 </div>
                 <div class="w-full h-1 bg-gray-600"></div>
             </div>
