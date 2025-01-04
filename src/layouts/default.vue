@@ -4,18 +4,6 @@ const links = [{
   label: 'Add task',
     icon: 'material-symbols:add-2-rounded',
     to: '/tasks/add'
-}, {
-  label: 'Installation',
-  icon: 'i-heroicons-home',
-  to: '/getting-started/installation'
-}, {
-  label: 'Vertical Navigation',
-  icon: 'i-heroicons-chart-bar',
-  to: '/components/vertical-navigation'
-}, {
-  label: 'Command Palette',
-  icon: 'i-heroicons-command-line',
-  to: '/components/command-palette'
 }]
 </script>
 
