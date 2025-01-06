@@ -1,14 +1,6 @@
-import { faker } from '@faker-js/faker'
+import Task from "~/server/models/Task.js";
 
 export default defineEventHandler((event) => {
-
-  const tasks = []
-  for (let i = 0; i < 40; i++) {
-    tasks.push({
-      id: i,
-      title: faker.lorem.sentence(),
-      description: faker.lorem.paragraph()
-    })
-  }
-  return tasks
+    const tasks = Task.find();
+    return tasks;
 })
